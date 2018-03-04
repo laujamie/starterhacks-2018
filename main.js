@@ -13,7 +13,7 @@ function changeBackground(newColor) {
 
 function w3() {
 	changeBackground('white');
-	changeColor('black');
+	changeColor('#1a9fa4');
 	document.getElementById('para').innerHTML = 'starting in 3';
 	setTimeout(w2, 1000);
 }
@@ -30,7 +30,6 @@ function w1() {
 
 function i4() {
 	changeBackground('darkGreen');
-	changeColor('white');
 	document.getElementById('para').innerHTML = 'inhale for 4';
 	setTimeout(i3, 1000);
 }
@@ -143,7 +142,6 @@ function e1() {
 }
 
 function done() {
-	changeColor('black')
 	changeBackground('white');
 	document.getElementById('para').innerHTML = 'finished!';
 }
