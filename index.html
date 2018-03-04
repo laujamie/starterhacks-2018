@@ -19,7 +19,8 @@
         anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth'],
         scrollBar: false,
         loopBottom: true,
-        scrollingSpeed: 500
+        scrollingSpeed: 700,
+        touchSensitivity: 38
       });
     });
   </script>
@@ -74,7 +75,7 @@
         </div>
       </div>
   <div class="section" id="section6">
-    <div class = "page" id = "breathing">
+    <div class = "page" id = "breathing" style="text-align:center;">
       <p class = "quote" id="para">This is the 4-7-8 breathing exercise. Press Start to begin.</p>
     	<button id="breathing_button", onclick="pressed(), changeBackground('darkGreen'), changeColor('white'), document.getElementById('para').innerHTML = 'inhale for 4', setTimeout(i3, 1000);">Start</button>
     	<script src="main.js">
@@ -83,7 +84,8 @@
   </div>
   <div class = "section" id="section7">
   <div class = "page" id = "final">
-    <p class = "quote">"INSERT FINAL HEART-MOVING QUOTE"</p><br>
+    <h1 id = "final_header">The harder the conflict, the more glorious the triumph</h1><br>
+    <h2>Thomas Paine </h2>
   </div>
 </div>
 </div>

@@ -11,6 +11,7 @@ h2 {
   font-family: 'sans-serif';
   font-size: 40px;
   margin-top: 0;
+  color: white;
 }
 
 ul {
@@ -48,7 +49,7 @@ button {
   padding: 10px 20px;
   text-decoration: none;
   font-size: 30px;
-  margin: 4px 2px;
+  margin: 40px 2px;
   border-radius: 5px;
   border-style: solid;
   border-color: #1a9fa4
@@ -61,15 +62,36 @@ button {
   border-radius: 5px;
   padding: 250px;
   padding-bottom: 300px;
-  margin: 50px, 50px, 50px, 50px;
+  margin: 100px, 50px, 50px, 50px;
   background-image: url(https://images.pexels.com/photos/175703/pexels-photo-175703.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb);
   background-size:100%;
   background-position: top;
 }
 
+#final {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #00a0a7;
+  border-radius: 5px;
+  padding: 150px;
+  margin: 100px, 50px;
+  margin-bottom: 100px;
+  background-image: url(https://wallpapersite.com/images/pages/pic_h/9940.jpg);
+  background-size:100%;
+  background-position: top;
+  height: 700px;
+}
+
+#final_header {
+  text-align: center;
+  font-family: 'arial';
+  font-size: 90px;
+  margin: 0;
+  color:white;
+}
+
 .page {
-  padding: 250px;
-  margin: 75px 50px 50px 50px;
+  padding: 200px;
 }
 
 .quote {
