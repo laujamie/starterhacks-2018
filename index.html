@@ -86,8 +86,10 @@
   <div class="section" id="section6">
     <div class="intro">
     <div class = "page" id = "breathing" style="text-align:center;">
-      <p class = "new" id="para">This is the 4-7-8 breathing exercise. Press Start to begin.</p>
-    	<button id="breathing_button", onclick="pressed(), changeBackground('darkGreen'), changeColor('white'), document.getElementById('para').innerHTML = 'inhale for 4', setTimeout(i3, 1000);">Start</button>
+      <p class = "new" id="para">This is the 4-7-8 breathing exercise. Select the number of times you would like to perform the exercise, then press Start to begin.</p>
+    	<button type ="button" id="b1", onclick="which1()">1</button>
+    	<button type ="button" id="b2", onclick="which2()">2</button>
+    	<button type ="button" id="b3", onclick="which3()">3</button>
     	<script src="main.js">
     	</script>
     </div>
