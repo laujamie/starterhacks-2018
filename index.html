@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>iNeedPositivity.com</title>
+  <title>Mental Health</title>
   <meta name = "description" content = "Spread happiness." />
   <meta name = "keywords" content="happiness, sad, cute, animal, pictures, breathing, inspiring, quotes" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href = "style.css" type = "text/css"  rel = "stylesheet">
+
+  <!--fullPage.js files-->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
@@ -15,6 +17,23 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/vendors/jquery.easings.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.js"></script>
+
+  <!--FIREBASE INITIALIZATION-->
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB25edEBtFw8AAZGpbNQ_s2XKLaewf22mA",
+      authDomain: "test-fd451.firebaseapp.com",
+      databaseURL: "https://test-fd451.firebaseio.com",
+      projectId: "test-fd451",
+      storageBucket: "test-fd451.appspot.com",
+      messagingSenderId: "692458900415"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <!--fullPage.js init-->
   <script type="text/javascript">
     $(document).ready(function() {
       $('#fullpage').fullpage({
@@ -54,10 +73,10 @@
     <!--http://www.independent.co.uk/life-style/health-and-families/features/why-cute-photos-of-animals-make-us-happier-10332916.html -->
   <div class="section" id="section2">
     <div class="intro">
-    <h1 class = "fluffy" id = "animals"> IT'S SO FLUFFY <!-- INSERT PICTURES HERE -->
-    </h1>
+      <div class - "page">
+      </div>
+    </div>
   </div>
-</div>
   <div class="section" id="section3">
     <div class="intro">
     <div class = "page">
@@ -69,11 +88,13 @@
     </div>
   </div>
     <div class="section" id="section4">
-      <div class="intro">
-      <div class="incomplete">
+      <audio data-autoplay>
+        <source src="images/test.ogg" type="audio/ogg">
+      </audio>
+      <div class="page">
+        <h1>Happy Music :)</h1>
       </div>
     </div>
-  </div>
     <div class="section" id="section5">
       <div class="intro">
       <div class = "page">
@@ -86,9 +107,8 @@
     </div>
   <div class="section" id="section6">
     <div class="intro">
-    <div class = "page" style="text-align:center;">
-      <p id = "breathing_exercise">4-7-8 breathing exercise</pr><br>
-        <p id = "para"> Select the number of times you would like to perform the exercise.</p>
+    <div class = "page" id = "breathing" style="text-align:center;">
+      <p id = "para"> Select the number of times you would like to perform the exercise.</p>
         <button type ="button" id="b1", onclick="which1()">1</button>
     	   <button type ="button" id="b2", onclick="which2()">2</button>
     	    <button type ="button" id="b3", onclick="which3()">3</button>
@@ -99,7 +119,7 @@
   <div class = "section" id="section7">
     <div class="intro">
   <div class = "page" id = "final">
-    <h1 id = "final_quote">The harder the conflict, the more glorious the triumph</h1><br>
+    <h1 id = "final_header">The harder the conflict, the more glorious the triumph</h1><br>
     <h2>Thomas Paine </h2>
   </div>
 </div>
