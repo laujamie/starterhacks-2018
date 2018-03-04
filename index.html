@@ -5,6 +5,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href = "style.css" type = "text/css"  rel = "stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/vendors/scrolloverflow.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/vendors/jquery.easings.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage();
+    });
+  </script>
 </head>
 
 <body>
@@ -17,37 +29,58 @@
       <li><a href="#meditation">Meditation</a></li>
     </ul>
   </div>
-  <div class = "page" id = "first_page">
-    <h1>Spread happiness.</h1>
-  </div>
-  <div class = "page">
-    <p class = "quote">"According to psychological research, seeing pictures of cute pictures can combat stress
-      and make us happier."</p><br>
-      <a href="http://www.independent.co.uk/life-style/health-and-families/features/why-cute-photos-of-animals-make-us-happier-10332916.html"
-      class = "source">The Independent</a>
+  <div id="fullpage">
+    <div class="section" id="section0">
+      <div class = "page" id = "first_page">
+        <h1>Spread happiness.</h1>
+      </div>
+    </div>
+    <div class="section" id="section1">
+      <div class = "page">
+        <p class = "quote">"According to psychological research, seeing pictures of cute pictures can combat stress
+          and make us happier."</p><br>
+          <a href="http://www.independent.co.uk/life-style/health-and-families/features/why-cute-photos-of-animals-make-us-happier-10332916.html"
+          class = "source">The Independent</a>
+        </div>
+      </div>
     <!--http://www.independent.co.uk/life-style/health-and-families/features/why-cute-photos-of-animals-make-us-happier-10332916.html -->
+  <div class="section" id="section2">
+    <div class = "page" id = "animals"> ANIMAL PICS <!-- INSERT PICTURES HERE -->
+    </div>
   </div>
-  <div class = "page" id = "animals"> ANIMAL PICS <!-- INSERT PICTURES HERE -->
+  <div class="section" id="section3">
+    <div class = "page">
+      <p class= "quote">"Studies show that listening to music can physiologically ease stress
+        and even reduce depressive symptoms."</p><br>
+        <a href="http://www.huffingtonpost.ca/entry/benefits-of-music_us_58122175e4b0390e69ce84a5"
+        class = "source">The Huffington Post</a>
+      </div>
+    </div>
+    <div class="section" id="section4">
+      <div class = "page" id = "music"> MUSIC
+      </div>
+    </div>
+    <div class="section" id="section5">
+      <div class = "page">
+        <p class = "quote">"Deep breathing is one of the best ways to lower stress in the body.
+          This is because when you breathe deeply, it sends a message to your brain to calm down and relax."</p><br>
+          <a href="https://www.webmd.com/balance/stress-management/stress-management-breathing-exercises-for-relaxation"
+          class = "source">WebMD</a>
+        </div>
+      </div>
+  <div class="section" id="section6">
+    <div class = "page" id = "breathing">
+      <p class = "quote" id="para">This is the 4-7-8 breathing exercise. Press Start to begin.</p>
+    	<button id="breathing_button", onclick="pressed(), changeBackground('darkGreen'), changeColor('white'), document.getElementById('para').innerHTML = 'inhale for 4', setTimeout(i3, 1000);">Start</button>
+    	<script src="main.js">
+    	</script>
+    </div>
   </div>
-  <div class = "page">
-    <p class= "quote">"Studies show that listening to music can physiologically ease stress
-      and even reduce depressive symptoms."</p><br>
-      <a href="http://www.huffingtonpost.ca/entry/benefits-of-music_us_58122175e4b0390e69ce84a5"
-      class = "source">The Huffington Post</a>
-  </div>
-  <div class = "page" id = "music"> MUSIC
-  </div>
-  <div class = "page">
-    <p class = "quote">"Deep breathing is one of the best ways to lower stress in the body.
-    This is because when you breathe deeply, it sends a message to your brain to calm down and relax."</p><br>
-    <a href="https://www.webmd.com/balance/stress-management/stress-management-breathing-exercises-for-relaxation"
-    class = "source">WebMD</a>
-  </div>
-  <div class = "page" id = "breathing"> BREATHING
-  </div>
+  <div class = "section" id="section7">
   <div class = "page" id = "final">
     <p class = "quote">"INSERT FINAL HEART-MOVING QUOTE"</p><br>
   </div>
-
+</div>
+</div>
   </body>
   </html>

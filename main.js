@@ -1,5 +1,5 @@
 var para = document.getElementById('para');
-var button = document.getElementById('button');
+var button = document.getElementById('breathing_button');
 		function pressed() {
 			button.style.display = "none";
 		}
@@ -14,7 +14,7 @@ var button = document.getElementById('button');
 		function i3() {
 			changeBackground('green');
 			document.getElementById('para').innerHTML = 'inhale for 3';
-			setTimeout(i2, 1000); 
+			setTimeout(i2, 1000);
 		}
 
 		function i2() {
