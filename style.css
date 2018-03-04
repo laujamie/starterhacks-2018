@@ -1,8 +1,7 @@
-h1 {
+#introduction {
   text-align: center;
   font-family: 'arial';
   font-size: 100px;
-  margin-top: 100px;
   margin: 0;
 }
 
@@ -10,6 +9,61 @@ h2 {
   text-align: center;
   font-family: 'sans-serif';
   font-size: 40px;
-  margin-top: 30px;
-  margin: 0;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin:0;
+  padding: 0;
+  overflow:hidden;
+  background-color: grey;
+}
+
+li {
+  float:left;
+  color: white;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+a:hover {
+  color: black;
+}
+
+#first_page {
+  border-style: solid;
+  border-width: 5px;
+  border-color: grey;
+  border-radius: 5px;
+  padding: 250px;
+  margin: 75px 50px 50px 50px;
+}
+
+.page {
+  padding: 250px;
+  margin: 75px 50px 50px 50px;
+}
+
+.quote {
+  text-align: center;
+  font-size: 30px;
+  font-family: georgia;
+}
+
+.source {
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: grey;
 }
