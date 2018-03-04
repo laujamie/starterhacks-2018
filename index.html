@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Mental Health</title>
+  <meta name = "description" content = "Spread happiness." />
+  <meta name = "keywords" content="happiness, sad, cute, animal, pictures, breathing, inspiring, quotes" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href = "style.css" type = "text/css"  rel = "stylesheet">
@@ -17,31 +20,28 @@
       $('#fullpage').fullpage({
         sectionsColor: ['#d3dfef', '#1a9fa4', '#d3dfef', '#1b2e3c', '#d3dfef', '#1a9fa4', '#d3dfef', '#1a9fa4'],
         anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth'],
+        navigation: false,
+        navigationPosition:'right',
         scrollBar: false,
         loopBottom: true,
         scrollingSpeed: 700,
-        touchSensitivity: 38
+        touchSensitivity: 5
       });
     });
   </script>
 </head>
 
 <body>
-  <div class = "navigation bars">
-    <ul>
-      <li><a href="#first">Go to top</a></li>
-      <li><a href="#third">Animals</a></li>
-      <li><a href="#fifth">Music</a></li>
-      <li><a href="#seventh">Breathing</a></li>
-    </ul>
-  </div>
   <div id="fullpage">
     <div class="section" id="section0">
+      <div class="intro">
       <div class = "page" id = "first_page">
         <h1>Spread happiness.</h1>
       </div>
     </div>
+    </div>
     <div class="section" id="section1">
+      <div class="intro">
       <div class = "page">
         <p class = "quote">"According to psychological research, seeing pictures of cute pictures can combat stress
           and make us happier."</p><br>
@@ -49,12 +49,16 @@
           class = "source">The Independent</a>
         </div>
       </div>
+    </div>
     <!--http://www.independent.co.uk/life-style/health-and-families/features/why-cute-photos-of-animals-make-us-happier-10332916.html -->
   <div class="section" id="section2">
-    <div class = "page" id = "animals"> ANIMAL PICS <!-- INSERT PICTURES HERE -->
-    </div>
+    <div class="intro">
+    <h1 class = "fluffy" id = "animals"> IT'S SO FLUFFY <!-- INSERT PICTURES HERE -->
+    </h1>
   </div>
+</div>
   <div class="section" id="section3">
+    <div class="intro">
     <div class = "page">
       <p class= "quote">"Studies show that listening to music can physiologically ease stress
         and even reduce depressive symptoms."</p><br>
@@ -62,11 +66,15 @@
         class = "source">The Huffington Post</a>
       </div>
     </div>
+  </div>
     <div class="section" id="section4">
-      <div class = "page" id = "music"> MUSIC
+      <div class="intro">
+      <div class="incomplete">
       </div>
     </div>
+  </div>
     <div class="section" id="section5">
+      <div class="intro">
       <div class = "page">
         <p class = "quote">"Deep breathing is one of the best ways to lower stress in the body.
           This is because when you breathe deeply, it sends a message to your brain to calm down and relax."</p><br>
@@ -74,20 +82,27 @@
           class = "source">WebMD</a>
         </div>
       </div>
+    </div>
   <div class="section" id="section6">
+    <div class="intro">
     <div class = "page" id = "breathing" style="text-align:center;">
-      <p class = "quote" id="para">This is the 4-7-8 breathing exercise. Press Start to begin.</p>
+      <p class = "new" id="para">This is the 4-7-8 breathing exercise. Press Start to begin.</p>
     	<button id="breathing_button", onclick="pressed(), changeBackground('darkGreen'), changeColor('white'), document.getElementById('para').innerHTML = 'inhale for 4', setTimeout(i3, 1000);">Start</button>
     	<script src="main.js">
     	</script>
     </div>
   </div>
+</div>
   <div class = "section" id="section7">
+    <div class="intro">
   <div class = "page" id = "final">
     <h1 id = "final_header">The harder the conflict, the more glorious the triumph</h1><br>
     <h2>Thomas Paine </h2>
   </div>
 </div>
 </div>
-  </body>
-  </html>
+</div>
+
+</body>
+
+</html>
