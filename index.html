@@ -18,14 +18,15 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $('#fullpage').fullpage({
-        sectionsColor: ['#d3dfef', '#1a9fa4', '#d3dfef', '#1b2e3c', '#d3dfef', '#1a9fa4', '#d3dfef', '#1a9fa4'],
+        sectionsColor: ['#ffffff', '#1a9fa4', '#ffffff', '#1b2e3c', '#ffffff', '#1a9fa4', '#ffffff', '#1a9fa4'],
         anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth'],
         navigation: false,
         navigationPosition:'right',
         scrollBar: false,
         loopBottom: true,
         scrollingSpeed: 700,
-        touchSensitivity: 5
+        touchSensitivity: 5,
+        parallax: true
       });
     });
   </script>
@@ -85,8 +86,9 @@
     </div>
   <div class="section" id="section6">
     <div class="intro">
-    <div class = "page" id = "breathing" style="text-align:center;">
-      <p class = "new" id="para">This is the 4-7-8 breathing exercise. Select the number of times you would like to perform the exercise, then press Start to begin.</p>
+    <div class = "page" style="text-align:center;">
+      <p id = "breathing_exercise">4-7-8 breathing exercise</pr><br>
+        <p id = "para"> Select the number of times you would like to perform the exercise,<br>then press Start to begin.</p>
     	<button type ="button" id="b1", onclick="which1()">1</button>
     	<button type ="button" id="b2", onclick="which2()">2</button>
     	<button type ="button" id="b3", onclick="which3()">3</button>
@@ -98,7 +100,7 @@
   <div class = "section" id="section7">
     <div class="intro">
   <div class = "page" id = "final">
-    <h1 id = "final_header">The harder the conflict, the more glorious the triumph</h1><br>
+    <h1 id = "final_quote">The harder the conflict, the more glorious the triumph</h1><br>
     <h2>Thomas Paine </h2>
   </div>
 </div>

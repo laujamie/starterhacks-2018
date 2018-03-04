@@ -15,17 +15,17 @@ function w3() {
 	changeBackground('white');
 	changeColor('black');
 	document.getElementById('para').innerHTML = 'starting in 3';
-	setTimeout(w2, 1000); 
+	setTimeout(w2, 1000);
 }
 
 function w2() {
 	document.getElementById('para').innerHTML = 'starting in 2';
-	setTimeout(w1, 1000); 
+	setTimeout(w1, 1000);
 }
 
 function w1() {
 	document.getElementById('para').innerHTML = 'starting in 1';
-	setTimeout(i4, 1000); 
+	setTimeout(i4, 1000);
 }
 
 function i4() {
@@ -38,7 +38,7 @@ function i4() {
 function i3() {
 	changeBackground('green');
 	document.getElementById('para').innerHTML = 'inhale for 3';
-	setTimeout(i2, 1000); 
+	setTimeout(i2, 1000);
 }
 
 function i2() {
@@ -147,7 +147,7 @@ function done() {
 	changeBackground('white');
 	document.getElementById('para').innerHTML = 'finished!';
 }
-	
+
 function which1 (){
 	b1.style.display = "none";
 	b2.style.display = "none";
@@ -174,7 +174,3 @@ function which3 (){
 	setTimeout(w3, 44000);
 	setTimeout(done, 66000);
 }
-
-
-
-

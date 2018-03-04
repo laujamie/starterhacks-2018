@@ -62,12 +62,25 @@ button {
   padding: 150px;
 }
 
-#final_header {
+#final_quote {
   text-align: center;
   font-family: 'arial';
   font-size: 90px;
   margin: 0;
   color:white;
+  padding-top: 150px;
+}
+
+#breathing_exercise {
+  font-size: 50px;
+  font-family: helvetica, sans-serif;
+  color: #1a9fa4;
+}
+
+#para {
+  font-size: 30px;
+  font-family: helvetica, sans-serif;
+  color: #1a9fa4;
 }
 
 .fluffy{
@@ -78,27 +91,21 @@ button {
 }
 
 .page {
-  padding: 200px;
+  padding: 240px 200px;
 }
 
 .quote {
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   font-family: helvetica, sans-serif;
-  color: #d3dfef;
-}
-
-.new{
-  font-size: 30px;
-  font-family: helvetica, sans-serif;
-  color: #1a9fa4;
+  color: #ffffff;
 }
 
 .source {
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   font-family: sans-serif;
-  color: #d3dfef;
+  color: #ffffff;
 }
 
 .section{
@@ -115,10 +122,6 @@ button {
 
 .controlArrow.next{
   right: 50px;
-}
-
-#infoMenu li a{
-  color: #fff;
 }
 
 #section0{
